@@ -1,0 +1,53 @@
+//- extends layout to your side
+extends layout/layout
+
+block var
+  - scriptpage = "home";
+
+block content
+    .section-nav
+        .sec-nav-wrapper
+            .img-logo
+                +img("images/logo.png","Logo")
+            .menu-mobile-logo
+                span.fa.fa-bars
+            .menu-wrapper
+                ul#main-menu
+                    li Home
+                    li.parent
+                        a(href="#", target="_blank") Fearure
+                        ul.sub-menu
+                            li
+                                a(href="#", target="_blank") Feature 1
+                            li
+                                a(href="#", target="_blank") Feature 2
+                            li
+                                a(href="#", target="_blank") Feature 3
+                            li
+                                a(href="#", target="_blank") Feature 4
+                    li.parent
+                        a(href="#", target="_blank") Element
+                        ul.sub-menu
+                            li
+                                a(href="#", target="_blank") Element 1
+                            li
+                                a(href="#", target="_blank") Element 2
+                            li
+                                a(href="#", target="_blank") Element 3
+                            li.parent
+                                a(href="#", target="_blank") Element 4
+                                    ul.sub-menu
+                                        li
+                                            a(href="#", target="_blank") Element 4.1
+                                        li
+                                            a(href="#", target="_blank") Element 4.2
+                                        li
+                                            a(href="#", target="_blank") Element 4.3
+                                    span.fa.fa-angle-right
+                            li Element 5
+                    li Contact
+            .search-tool
+                input(type="search", placeholder="abc, xyz,...")
+                span.fa.fa-search
+
+
