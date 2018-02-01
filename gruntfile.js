@@ -106,7 +106,7 @@ module.exports = function(grunt) {
         connect: {
             server: {
                 options: {
-                    port: 8008,
+                    port: 8088,
                     hostname: '*',
                     base: {
                         path: '<%= meta.public %>',
